@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    position: relative;
+    height: 100%;
+    /*overflow: hidden;*/
+    background: #eee;
+}
+ul,li {
+    list-style: none;
+}
+a,a:hover,a:visited {
+    text-decoration: none;
+}
+i {
+    font-style: normal;
+}
+.clearfix,.clearfix:before,.clearfix:after {
+    display:table;
+    content:'';
+}
+.clearfix:after {
+    clear: both;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper {
+    height:100%;
+    position: relative;
+}
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+
+    /* Center slide text vertically */
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+}
+.swiper-container-horizontal>.swiper-pagination {
+    bottom: 6px;
+}
+/* 分页点 */
+.swiper-pagination-bullet {
+    background: #ffab81;
+    opacity: .8;
+}
+.swiper-pagination-bullet-active{
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    background: url("../images/star.png") no-repeat  center center;
+    background-size: contain;
+    opacity: 1;
+}
+
+/* 第一页 */
+.swiper-slide .content {
+    padding-bottom: 5px;
+    /*margin: 0 .45rem;*/
+    margin: 0 .4rem;
+    background: #fff;
+    /*border: 1px solid red;*/
+}
+.slide-one .content .first-page-title {
+    padding: .8rem 0 .48rem 0;
+    font-size: .48rem;
+    color: #b45b01;
+    text-align: center;
+}
+.swiper-slide .content .carve-up-line {
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+}
+.swiper-slide .content .carve-up-line .half-line {
+    width:38%;
+    margin: 0 1%;
+    border-top: 2px solid #ff8a50;
+    display: inline-block;
+}
+.swiper-slide .content .carve-up-line i {
+    margin:0 .3%;
+    width:3%;
+    height:.03rem;
+    display: inline-block;
+}
+.swiper-slide .content .carve-up-line i span {
+    width:5px!important;
+    height:5px!important;
+    /*width: .06rem;*/
+    /*height: .06rem;*/
+    background: #ff8a50;
+    display: inline-block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.swiper-slide .content .introduce {
+    padding-left: 2%;
+    margin: .3rem 0 0 0;
+    width:93%;
+}
+.swiper-slide .content .introduce ul {  }
+.swiper-slide .content .introduce ul li {
+    position: relative;
+    padding-left: .3rem;
+    margin-bottom: .3rem;
+    line-height: .48rem;
+    text-align: left;
+    color:#9e6b28;
+    font-size: .3rem;
+}
+.swiper-slide .content .introduce ul li span{
+    position: absolute;
+    left:0;
+    width: .24rem;
+    height: .48rem;
+    display: inline-block;
+    background: url("../images/arrow.png") no-repeat 0 center;
+    background-size: contain;
+}
+.swiper-slide .content .projects {
+    width: 100%;
+}
+.swiper-slide .content .projects .produce {
+    float: left;
+    margin: .4rem 0;
+    width: 50%;
+    text-align: center;
+}
+.swiper-slide .content .projects .produce img {
+    width: .66rem;
+}
+.swiper-slide .content .projects .produce span{
+    width:100%;
+    height:.42rem;
+    font-size: .26rem;
+    color: #999;
+    display: inline-block;
+}
+.swiper-slide .content .last-tip {
+    line-height: .46rem;
+    font-size: .26rem;
+    color: #888;
+    text-align: left;
+}
+
+/* slide two */
+.swiper-slide .title {
+    position: relative;
+    padding: .42rem 0;
+    width:100%;
+    line-height:.4rem;
+    font-size: .4rem;
+    text-align: center;
+}
+.swiper-slide .title-linear {
+    position: absolute;
+    top:.62rem;
+    width:32%;
+    height: .025rem;
+    z-index: 0;
+}
+.swiper-slide .lf-linear{
+    left:2%;
+    background: -webkit-linear-gradient(left, #fff, #ff8a50);
+    background: -moz-linear-gradient(left, #fff, #ff8a50);
+    background: -ms-linear-gradient(left, #fff, #ff8a50);
+    background: -o-linear-gradient(left, #fff, #ff8a50);
+    background: linear-gradient(left, #fff, #ff8a50);
+}
+.swiper-slide .lf-linear:before {
+    content: '';
+    display: table;
+    position: absolute;
+    right:-.04rem;
+    top: -.06rem;
+    width: .13rem;
+    height: .13rem;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #ff8a50;
+}
+.swiper-slide .rg-linear{
+    right:2%;
+    background: -webkit-linear-gradient(left, #ff8a50, #fff);
+    background: -moz-linear-gradient(left, #ff8a50, #fff);
+    background: -ms-linear-gradient(left, #ff8a50, #fff);
+    background: -o-linear-gradient(left, #ff8a50, #fff);
+    background: linear-gradient(left, #ff8a50, #fff);
+}
+.swiper-slide .rg-linear:before {
+    content: '';
+    display: table;
+    position: absolute;
+    left:-.04rem;
+    top: -.06rem;
+    width: .13rem;
+    height: .13rem;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #ff8a50;
+}
+.swiper-slide .content .model {
+    margin-bottom: .4rem;
+    width:100%;
+    height: 6.67rem;
+    background: url("../images/baolitong-model.png") no-repeat center 0;
+    background-size: contain;
+}
+
+/* slide three*/
+.swiper-slide .content .advantages {
+    padding-bottom: .45rem;
+}
+.swiper-slide .content .advantages .txt-region,.swiper-slide .content .advantages .img-region {
+    float: left;
+    width: 50%;
+}
+.swiper-slide .content .advantages .txt-region h3 {
+    padding: .17rem 0 .22rem 0;
+    height: .3rem;
+    font-size: .3rem;
+    color: #444;
+    text-align: left;
+}
+.swiper-slide .content .advantages .txt-region p {
+    line-height: .44rem;
+    font-size: .26rem;
+    color: #888;
+    text-align: left;
+}
+.swiper-slide .content .advantages .img-region img {
+    width:100%;
+}
+.swiper-slide .content .star-tip {
+    margin-top: -.2rem;
+    line-height: .22rem;
+    font-size: .22rem;
+}
+
+/* slide 4 */
+.swiper-slide .margin-bottm {
+    margin-bottom: .25rem;
+}
+.swiper-slide .content .source {
+    position: relative;
+    padding-left: 25%;
+    height:  .4rem;
+    line-height:  .4rem;
+    font-size: .32rem;
+    color:#666;
+    text-align: left;
+}
+.swiper-slide .content .source span.maincolor {
+    padding-left: .5em;
+}
+.swiper-slide .content .source i.maincolor {
+    position: absolute;
+    left: 20.8%;
+    top: -.3rem;
+    font-size: .26rem;
+}
+.swiper-slide .content .source i .diagonal-line {
+    width: 1px !important;
+    height: .28rem;
+    display: inline-block;
+    background: #ff8a50;
+    -webkit-transform: skew(-30deg) translate(.1rem,.1rem);
+    -moz-transform: skew(-30deg) translate(.1rem,.1rem);
+    -ms-transform: skew(-30deg) translate(.1rem,.1rem);
+    -o-transform: skew(-30deg) translate(.1rem,.1rem);
+    transform: skew(-30deg) translate(.1rem,.1rem);
+}
+.swiper-slide .content .dashed-line {
+    position: relative;
+    margin-left: 54%;
+    width: 0;
+    height: 1.15rem;
+    border-left: 1px dotted #ff8a50;
+    text-align: center;
+    background: #fff;
+}
+.swiper-slide .content .dashed-line span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:0;
+    border-width: .15rem;
+    border-style: solid;
+    border-color: #FF8A50 transparent transparent transparent;
+    transform: translate(-50%,-50%) ;
+}
+.swiper-slide .content .invest-tip {
+    position: absolute;
+    bottom:15.5%;
+    padding-left: 10%;
+    margin-bottom: .2rem;
+    font-size: .24rem;
+}
+.swiper-slide .content a.invest {
+    position: absolute;
+    bottom:7%;
+    left:5%;
+    width: 90%;
+    padding: .31rem 0;
+    font-size: .36rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: #ff8a50;
+    display: block;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-radius:  1rem;
+}
+
+.maincolor {
+    color: #ff8a50!important;
+}
+
+@media (max-device-height: 480px) {
+    .swiper-slide .content .advantages {
+        padding-bottom: .4rem;
+    }
+}
